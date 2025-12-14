@@ -3,6 +3,7 @@ This project uses Python and pandas to clean and standardise a messy healthcare 
 
 This notebook walks through a full cleaning and standardisation workflow on a raw hospital admissions dataset using Python and pandas.
 I start with basic exploratory checks (head, info, describe) to understand column types, missing values and obvious anomalies. From there, I systematically clean each group of fields:
+
 ***	Patient details: ***
 o	Standardised patient names to title case so the same person isn’t represented with multiple capitalisation styles.
 o	Cleaned the age column by flagging implausible ages (e.g. under-18 in an adult dataset) and capping them using an IQR-based outlier rule, reducing the impact of data entry errors.
